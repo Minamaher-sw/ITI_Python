@@ -8,7 +8,9 @@ if a == 4 :
     print("Hello World")
 else :
     print("Hello World ")
+    
 # Quotes Tricks 
+# Mlti Line Comment 
 """ 
 Single Quote is same Double Quotes in use 
 Double Quotes
