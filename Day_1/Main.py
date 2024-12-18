@@ -30,3 +30,25 @@ in this shape
 is_student
 first_name 
 """
+
+"""
+type function 
+    is function to get data type  of enter variable 
+    Strings 
+    Numbers 
+    Boolean 
+    Tuples 
+    Lists 
+    Dictionaries
+
+   parameter : is Variable 
+   return :Data Type of Variable 
+"""
+first_name='Mina'
+last_name =["Maher"]
+age = 25 
+long =12.5
+print(type(first_name))
+print(type(last_name))
+print(type(age))
+print(type(long))
