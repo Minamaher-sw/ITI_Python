@@ -1,1 +1,3 @@
-print("Hello World")
+# Tricks In Python
+# Hello World Programe 
+print("Hellow World ") 
