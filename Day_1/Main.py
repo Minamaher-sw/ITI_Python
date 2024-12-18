@@ -8,7 +8,7 @@ if a == 4 :
     print("Hello World")
 else :
     print("Hello World ")
-    
+
 # Quotes Tricks 
 # Mlti Line Comment 
 """ 
@@ -24,3 +24,9 @@ paragraph_2 = """This is a paragraph.
  It is made up of multiple lines and sentences.""" 
 print(word ,'\n',sentence,'\n',paragraph_1,paragraph_2)
 
+#Name Convension in python 
+"""
+in this shape 
+is_student
+first_name 
+"""
