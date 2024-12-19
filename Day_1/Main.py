@@ -206,3 +206,58 @@ if var_2 :
     print("str not empty ")
 else :
     print("str empty")
+
+"""
+            ***************************************  *****************  ********************************
+                                               Strings and operation on it 
+            ***************************************  *****************  ********************************                                    
+"""
+first_name ="Mina"
+last_name  ="Maher"
+#operation 
+first_name=first_name.upper()
+print(first_name)
+first_name=first_name.lower()
+print(first_name)
+#solve error 
+if first_name.isdigit():
+    print(int(first_name))
+else :
+    print("not digit")
+
+#  *******************************  How we get Full Name 6 ways ************************ #
+# First way  poor use high mistakes 
+full_name =first_name +" "+ last_name 
+print("Full name is ",full_name  )
+
+# Second way 
+full_name = "Full name is %s %s"%(first_name , last_name)
+print(full_name  )
+
+# Third way
+"""
+ trick
+ full_name = "Full name is {} {}".format(first_name , last_name ,... , ... ,...) is true becouse number of elements more than and equal number of bracs
+ but 
+ full_name = "Full name is {} {}".format(first_name ) is false 
+
+"""
+full_name = "Full name is {} {}".format(first_name , last_name)
+print(full_name  )
+
+# problem is dublicate for elements 
+full_name = "Hello {} your Full name is {} {}".format(first_name ,first_name , last_name)
+print(full_name  )
+
+# way num 4  index way solve for dublicate at way 3 by index
+full_name = "Hello {0} your Full name is {0} {1}".format(first_name , last_name)
+print(full_name  )
+
+#way nm 5 is more readable than way num 4
+name_array = "Hello {first_name} your Full name is {first_name} {last_name}"
+full_name = name_array.format(first_name = first_name, last_name= last_name)
+print(full_name  )
+
+# way num 6 is more readable than way 5 character  f and we delet formate fnction
+full_name = f"Hello {first_name} your Full name is {first_name} {last_name}"
+print(full_name  )
