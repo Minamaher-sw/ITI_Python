@@ -32,8 +32,7 @@ first_name
 """
 
 """
-type function 
-    is function to get data type  of enter variable 
+Type  is function to get data type  of enter variable 
     Strings 
     Numbers 
     Boolean 
@@ -52,3 +51,36 @@ print(type(first_name))
 print(type(last_name))
 print(type(age))
 print(type(long))
+
+# casting function 
+"""
+ Cating Function
+ it's Formula   type(variale)
+ """
+value_1 = 15.5
+value_2 = 15
+value_3 = 'mina'
+value_4 =float(value_2)
+value_5 =int(value_1)
+value_6 =str(value_1)
+#note
+"""
+if variable contain string and this string is number only
+  a ='11' or '1' or '11111..'
+  we can make for it casting with int  and float 
+  but 
+  if string contain at least one character casting will give you error
+"""
+value_3_1 ='1'
+value_8=int(value_3_1)
+value_9 =float(value_3_1)
+# error value_10 = int(value_3)
+
+print(value_1)
+print(value_2)
+print(value_3)
+print(value_4)
+print(value_5)
+print(value_6)
+print(value_8)
+print(value_9)
