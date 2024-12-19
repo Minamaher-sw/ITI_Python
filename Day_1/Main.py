@@ -142,19 +142,67 @@ print("Exponent Op of op1 and op2 = ",exp_op1_op2)
 #assign 
 cal_oper_3 = 12 
 cal_oper_4 = 5
-result = cal_oper_3
 print("******* Assignment  operators with Arithmetic operators section ** ")
+result = cal_oper_3
 result += cal_oper_4   #add and assign  
 print(result)
+
+result = cal_oper_3
 result -= cal_oper_4   #subtract and assign 
 print(result)
+
+result = cal_oper_3
 result *= cal_oper_4  #multiply and assign 
 print(result)
+
+result = cal_oper_3
 result /= cal_oper_4  #divide and assign  
 print(result)
+
+result = cal_oper_3
 result %= cal_oper_4 #get modulus and assign 
 print(result)
+
+result = cal_oper_3
 result //= cal_oper_4  #floor divide and assign 
 print(result)
+
+result = cal_oper_3
 result **= cal_oper_4 #  get exponent and assign
 print(result)
+
+"""
+       *****************************************  *********************88
+                              False Tricks
+        if value o any varialble (x)is false if
+        1-  = '' or "" or """ """ --> empty string 
+        2-  =0
+        3-  = None
+        4-  = {} or [] or ()
+        5-  = false 
+
+            if x :    this condition is false 
+        any value of x other these is true 
+"""
+my_list =[]  #empty string 
+if my_list : # condition false
+    print("list not empty")
+else:
+    print("list is empty")
+
+my_list =[1]  #non empty string 
+if my_list : # condition true
+    print("list not empty")
+else:
+    print("list is empty")
+
+var_1 =None 
+if var_1 :
+    print("not good ")
+else :
+    print("good")
+var_2 ='' 
+if var_2 :
+    print("str not empty ")
+else :
+    print("str empty")
