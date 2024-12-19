@@ -114,6 +114,7 @@ Div_op1_op2 =Cal_operand_1 /Cal_operand_2
 Dwf_op1_op2 =Cal_operand_1 //Cal_operand_2 
 # 12 ** 5 = 12^5 pow(12,5) = 
 exp_op1_op2 =Cal_operand_1 **Cal_operand_2 
+print("*************** Arithmetic operators ************* ")
 print("two operand  is ",Cal_operand_1 ,Cal_operand_2)
 print("addition of op1 and op2 = ",add_op1_op2)
 print("substraction of op1 and op2 = ",sub_op1_op2)
@@ -122,3 +123,38 @@ print("Division of op1 and op2 = ",mod_op1_op2)
 print("Modulus  of op1 and op2 = ",Div_op1_op2)
 print("Division without Fractions of op1 and op2 = ",Dwf_op1_op2)
 print("Exponent Op of op1 and op2 = ",exp_op1_op2)
+
+"""                             ***************************
+                        AAssignment  operators with Arithmetic operators 
+                             *********************************
+"""
+"""
+=    assign 
++=   add and assign  
+-=   subtract and assign 
+*=   multiply and assign 
+/=   divide and assign  
+%=   get modulus and assign 
+//=  floor divide and assign 
+**=  get exponent and assign
+
+"""
+#assign 
+cal_oper_3 = 12 
+cal_oper_4 = 5
+result = cal_oper_3
+print("******* Assignment  operators with Arithmetic operators section ** ")
+result += cal_oper_4   #add and assign  
+print(result)
+result -= cal_oper_4   #subtract and assign 
+print(result)
+result *= cal_oper_4  #multiply and assign 
+print(result)
+result /= cal_oper_4  #divide and assign  
+print(result)
+result %= cal_oper_4 #get modulus and assign 
+print(result)
+result //= cal_oper_4  #floor divide and assign 
+print(result)
+result **= cal_oper_4 #  get exponent and assign
+print(result)
