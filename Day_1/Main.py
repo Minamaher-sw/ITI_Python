@@ -84,3 +84,41 @@ print(value_5)
 print(value_6)
 print(value_8)
 print(value_9)
+"""                  ***************************
+                        Arithmetic operators 
+                 *********************************
+"""
+"""
++   addition Op  
+-   Subtraction Op 
+*   Multiplication Op 
+/   Division Op  
+%   Modulus Op 
+//  Division without Fractions 
+**  Exponent Op
+
+"""
+Cal_operand_1 =12 
+Cal_operand_2 =5
+# 12+5 =17
+add_op1_op2 =Cal_operand_1 + Cal_operand_2 
+#12 -5 = 7
+sub_op1_op2 =Cal_operand_1 - Cal_operand_2 
+#12*5 = 60
+mul_op1_op2 =Cal_operand_1 * Cal_operand_2 
+#12 %5 = ( 12//5 =2 s0 12 %5 = 12 - (5*2)=2
+mod_op1_op2 =Cal_operand_1 % Cal_operand_2 
+# 12/5 = 2.4
+Div_op1_op2 =Cal_operand_1 /Cal_operand_2 
+# 12 // 5 = 2
+Dwf_op1_op2 =Cal_operand_1 //Cal_operand_2 
+# 12 ** 5 = 12^5 pow(12,5) = 
+exp_op1_op2 =Cal_operand_1 **Cal_operand_2 
+print("two operand  is ",Cal_operand_1 ,Cal_operand_2)
+print("addition of op1 and op2 = ",add_op1_op2)
+print("substraction of op1 and op2 = ",sub_op1_op2)
+print("Multiplication of op1 and op2 = ",mul_op1_op2)
+print("Division of op1 and op2 = ",mod_op1_op2)
+print("Modulus  of op1 and op2 = ",Div_op1_op2)
+print("Division without Fractions of op1 and op2 = ",Dwf_op1_op2)
+print("Exponent Op of op1 and op2 = ",exp_op1_op2)
