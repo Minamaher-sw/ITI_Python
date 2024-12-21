@@ -341,3 +341,114 @@ Lenght_Full_neme =len(full_name)
 print(type(Lenght_Full_neme))
 print(Lenght_Full_neme)
 
+"""
+  ******************************** Data strcture **************************                           
+"""
+"""
+  ******************************** 1 Lists  and it's Functions**************************   
+  to creat list
+  my_list =[]                        
+"""
+#without elements is empty list 
+# my_list=[] 
+
+# true 
+my_list =[1,2,3,4,5]
+my_list[0]='ahmed'
+print(my_list)
+
+"""
+                            Sum Fnction 
+                            parameter : List  // elements from same datatype
+
+                            retur :Sum of elements of list 
+"""
+my_list =[1,2,3,4,5] 
+sum_of_list = sum(my_list)
+print("sum of list is " ,sum_of_list)
+
+""" access index out of range  error : list assignment index out of range
+
+            my_list[6]='ahmed'
+            print(my_list)
+            what sol 
+            sol is append function 
+"""
+
+"""
+            ******************** Append function ****************
+        def : adding or push of list look like push of stack 
+        and it change inplace  mutable 
+
+            parameter : take value this value of any data type 
+            return : None 
+"""
+my_list.append([1,2,3,4])
+print("append is ",my_list)
+
+"""
+        error with list 
+"""
+#my_list=[]
+# error 1  list assignment index out of range
+# my_list[0]=12 
+#print(my_list[0])
+"""
+            ************************ POP function ******************
+        def : delete last element of list 
+"""
+my_list.append("mina")
+print(my_list)
+my_list.pop()
+print("pop function",my_list)
+
+"""
+            ************************ insert function ******************
+        def : insertion for element of list 
+
+        parameter_1 :index that want to insert at it 
+        parameter_2 : value that want add it  
+"""
+my_list_2 =[1,2,3,5,6]
+print("my_list_2",my_list_2)
+my_list_2.insert(3,4)
+print("insert list ",my_list_2)
+"""
+            ************************ remove function ******************
+        def : remove one value from list 
+
+        parameter_1 :value
+        
+"""
+my_list_2 =[1,2,3,5,6]
+my_list_2.insert(3,3)
+print("my_list_2",my_list_2)
+
+my_list_2.remove(3)
+print("Remove list",my_list_2)
+"""
+            ************************ extend function ******************
+        def : contacnate for two list 
+
+        parameter_1 :list 
+        
+"""
+my_list_3 =[1,2,3,5,6]
+my_list_4 =["mina","maher"]
+print("my_list_3",my_list_3)
+print("my_list_4",my_list_4)
+my_list_4.extend(my_list_3)
+print("my_list_4 after extend my_list_4.extend(my_list_3)",my_list_4)
+my_list_3 =[1,2,3,5,6]
+my_list_4 =["mina","maher"]
+my_list_3.extend(my_list_4)
+print("my_list_3 after extend my_list_3.extend(my_list_4)",my_list_3)
+
+"""
+        Slice as string   and same tricks 
+"""
+my_list_3 =[1,2,3,5,6]
+my_list_4 = my_list_3[-1]
+print(my_list_4)
+
+
