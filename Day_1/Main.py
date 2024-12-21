@@ -483,3 +483,31 @@ else :
     print("not f2ond")
 #out false
 print(not True)
+
+"""
+        ********************* Three to get index of list or string  nonscaler data types
+"""
+my_list=[1,2,3,4,5]
+# way  1
+index =0 
+print("Way 1")
+for item in my_list :
+    print(f"index {index} = {item}")
+    index +=1 
+#way 
+print("Way 2")
+for index in range(len(my_list)):
+    print(f"index {index} = {my_list[index]}")
+"""
+    ************************ enumerate Fumction **********************
+     def : Function use with list
+
+     parameter : list name 
+
+     return : two values 
+     value_1 is index 
+     vale_2  is value of this index
+"""
+print("Way 3")
+for index , value in enumerate(my_list):
+    print(f"index {index} = {value}")
