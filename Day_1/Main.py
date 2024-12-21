@@ -294,3 +294,39 @@ print(name_str)
 name_str_2 = name_str.replace('e','i')
 print(name_str)
 print(name_str_2)
+
+"""
+        ******************** Slice of String *****************************
+        we can take part from string 
+"""
+full_name ="Mina Maher Mosadef"
+first_name =full_name[:5] #count from 0 to 4 M i n a ''
+sec_name = full_name[5:11]
+last_name = full_name[11:]
+
+print("full_name  is " , full_name)
+print("first_name is " ,first_name)
+print("sec_name   is " ,  sec_name)
+print("last_name  is " , last_name)
+
+# Step 
+any_char =full_name[::2] # mean from start to end with step 2 
+print("any char is " ,any_char)
+
+#to get last char fam way 
+# nead to know lenthg not recommend 
+last_char_of_fn =full_name[17:]
+print("last char of full name" ,last_char_of_fn)
+#second is reccomend 
+last_char_of_fn =full_name[-1] # -1 is last char f and -2 is e -3 is d so
+print("last char of full name" ,last_char_of_fn)
+
+#   ****************  how we can revrse string  ************************** 
+# way 1
+Reverse_name_1 =full_name[-1 ::-1]# start is last char and end first char and step is back step -1
+print("Reverse name way 1 is ",Reverse_name_1)
+
+#way 2
+Reverse_name_2 = full_name[::-1] # from last char to start char and step is back step -1
+print("Reverse name way 2 is ",Reverse_name_2)
+
