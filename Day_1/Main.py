@@ -451,4 +451,35 @@ my_list_3 =[1,2,3,5,6]
 my_list_4 = my_list_3[-1]
 print(my_list_4)
 
+"""
+        ************** IF Condion  *****************
+"""
+list_value =[1,2,3,4,5,6]
+number = int(input("enter number : "))
+if number in list_value :
+    print(number)
+else :
+    print("not fond")
+"""
+    **************************** Logic operators **********************
+    and  two cond must true
+    or   one condiotion must true
+    not  not true = false  
+"""
+number_1 = int(input("enter number 1 : "))
+number_2 = int(input("enter number 2 : "))
+# two cond must true
+if number_1 in list_value and number_2 in list_value:
+    print(number_1 ,number_2)
+else :
+    print("not fond")
+# one condiotion must true
+number_1 = int(input("enter number 1 : "))
+number_2 = int(input("enter number 2 : "))
 
+if number_1 in list_value or number_2 in list_value:
+    print(number_1 ,number_2)
+else :
+    print("not f2ond")
+#out false
+print(not True)
