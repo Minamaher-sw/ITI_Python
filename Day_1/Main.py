@@ -330,3 +330,14 @@ print("Reverse name way 1 is ",Reverse_name_1)
 Reverse_name_2 = full_name[::-1] # from last char to start char and step is back step -1
 print("Reverse name way 2 is ",Reverse_name_2)
 
+"""
+     *************************  Length Function ********************* 
+     fnction number of character or elemnts in string , ist 
+
+     parameter : Variable 
+     return : Lenght of variable 
+"""
+Lenght_Full_neme =len(full_name)
+print(type(Lenght_Full_neme))
+print(Lenght_Full_neme)
+
