@@ -261,3 +261,36 @@ print(full_name  )
 # way num 6 is more readable than way 5 character  f and we delet formate fnction
 full_name = f"Hello {first_name} your Full name is {first_name} {last_name}"
 print(full_name  )
+
+
+"""
+                        mutable and immmutable 
+                              strings
+"""
+
+name_str="menamaher"
+#error 'str' object does not support item assignment
+# name_str[1]='i'
+#to change thi character two way
+#way_1
+name_str="minamaher"
+print(name_str)
+#way_2   we use replace function 
+"""
+            *********** Replace Function *************
+            parameter_1 = char that want to change 
+            parameter_2 = new char 
+
+            return : new address of new string 
+            change isn't inplcae 
+"""
+#no change  becouse change isn't inplcae 
+name_str="menamaher"
+name_str.replace('e','i')
+print(name_str)
+
+#solu
+# replace each character (e) and set i instead of it 
+name_str_2 = name_str.replace('e','i')
+print(name_str)
+print(name_str_2)
