@@ -36,3 +36,12 @@ print(type(thislist))
 """
 thislist = list(('apple' , 'orange' ,22))
 print(thislist)
+
+"""
+    Negative Indexing
+    Negative indexing means start from the end
+
+    -1 refers to the last item, -2 refers to the second last item etc.
+"""
+new_list =thislist[-1]
+print(new_list)
