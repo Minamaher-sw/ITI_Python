@@ -50,3 +50,13 @@ The replace() method replaces a string with another string:
 print(white_string)
 print("white after replace "" with - is : " ,white_string.replace(" " ,"-"))
 
+"""
+    Split String
+The split() method returns a list where the text between the specified separator becomes the list items.
+
+Example
+The split() method splits the string into substrings if it finds instances of the separator:
+"""
+list = first_name.split(" ")
+print(first_name)
+print("List of first name after split : ",list)
