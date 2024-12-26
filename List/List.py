@@ -125,3 +125,36 @@ thislist.insert(2,"mosadef")
 print(thislist)
 thislist.insert(2,"Astifanous")
 print(thislist)
+
+"""
+    ***************** Python - Add List Items ***********
+Append Items
+"""
+thislist.append("full name")
+print(thislist)
+"""
+    Extend List
+    To append elements from another list to the current list, use the extend() method.
+
+    Add Any Iterable
+    The extend() method does not have to append lists, you can add any iterable object (tuples, sets, dictionaries etc.).
+
+    Example
+    Add elements of a tuple to a list:
+
+thislist = ["apple", "banana", "cherry"]
+thistuple = ("kiwi", "orange")
+thislist.extend(thistuple)
+"""
+thislist = ["apple", "banana", "cherry"]
+tropical = ["mango", "pineapple", "papaya"]
+print(thislist ,"\n" ,tropical)
+thislist.extend(tropical)
+print(f"thislist after extend ffunction is {thislist} " )
+# with tuple
+thislist = ["apple", "banana", "cherry"]
+thistuple = ("kiwi", "orange")
+print(thislist ,"\n" ,thistuple)
+thislist.extend(thistuple)
+print(f"thislist after extend ffunction tuple is {thislist} " )
+
