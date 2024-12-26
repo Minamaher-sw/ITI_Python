@@ -158,3 +158,260 @@ print(thislist ,"\n" ,thistuple)
 thislist.extend(thistuple)
 print(f"thislist after extend ffunction tuple is {thislist} " )
 
+"""
+    ******************** Python - Remove List Items ******
+"""
+"""
+    Remove Specified Item
+The remove() method removes the specified item
+
+If there are more than one item with the specified value, the remove() method removes the first occurrence:
+
+Example
+Remove the first occurrence of "banana":
+"""
+print(thislist)
+thislist.remove("apple")
+print(thislist)
+
+thislist = ["apple", "banana", "cherry", "banana", "kiwi"]
+print(thislist)
+thislist.remove("banana")
+print(thislist)
+
+"""
+Remove Specified Index
+The pop() method removes the specified index.
+parameter 1 is index 
+"""
+thislist = ["apple", "banana", "cherry", "banana", "kiwi"]
+print(thislist)
+thislist.pop()
+print(thislist)
+
+thislist = ["apple", "banana", "cherry", "banana", "kiwi"]
+print(thislist)
+thislist.pop(1)
+print(thislist)
+
+# The del keyword also removes the specified index: 
+"""
+    del :
+    del thislist[0]
+    The del keyword can also delete the list completely.
+    del thislist
+"""
+thislist = ["apple", "banana", "cherry", "banana", "kiwi"]
+print(thislist)
+del thislist[0]
+print(thislist)
+print("**************************************")
+thislist = ["apple", "banana", "cherry", "banana", "kiwi"]
+print(thislist)
+del thislist
+# error : name 'thislist' is not defined
+#print(thislist)
+
+"""
+    Clear the List
+    The clear() method empties the list.
+"""
+print("**************************************")
+thislist = ["apple", "banana", "cherry", "banana", "kiwi"]
+print(thislist)
+thislist.clear()
+print(thislist)
+
+"""
+   ****************  Python - Loop Lists  *************
+"""
+print("********** Python - Loop Lists ***************\n")
+thislist = ["apple", "banana", "cherry"]
+for item in thislist:
+    print(item)
+
+"""
+    Loop Through the Index Numbers
+You can also loop through the list items by referring to their index number.
+
+Use the range() and len() functions to create a suitable iterable.Loop Through the Index Numbers
+You can also loop through the list items by referring to their index number.
+
+Use the range() and len() functions to create a suitable iterable.
+"""
+print("printing from index by for loop")
+for index in range(len(thislist)):
+    print(thislist[index])
+
+#using while loop
+print("printing from index by while loop")
+index =0 
+while True :
+    print(thislist[index])
+    index+=1
+    if(index == len(thislist)):
+        break 
+"""
+Looping Using List Comprehension
+List Comprehension offers the shortest syntax for looping through lists:
+
+Example
+A short hand for loop that will print all items in a list:
+
+List Comprehension
+List comprehension offers a shorter syntax when you want to create a new list based on the values of an existing list.
+
+Example:
+
+Based on a list of fruits, you want a new list, containing only the fruits with the letter "a" in the name.
+
+Without list comprehension you will have to write a for statement with a conditional test inside:
+
+"""
+print("printing list byUsing List Comprehension ")
+thislist = ["apple", "banana", "cherry"]
+[print(x) for x in thislist]
+
+
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist = []
+
+for x in fruits:
+  if "a" in x:
+    newlist.append(x)
+print(newlist)
+print("printing list after using List Comprehension ")
+"""
+    The Syntax
+newlist = [expression for item in iterable if condition == True]
+The return value is a new list, leaving the old list unchanged.
+"""
+new_list = [x for x in fruits if "a" in x]
+print(newlist)
+
+new_list = [x for x in fruits if x !="apple"]
+print(new_list)
+
+new_list =[x for x in range(10)]
+print(new_list)
+
+new_list =[x.upper() for x in fruits if x !="mango"]
+print(new_list)
+
+new_list =["hello" for x in fruits if x !="mango"]
+print(new_list)
+new_list =[x if x !="banana" else "orange " for x in fruits ]
+print(new_list)
+
+"""
+ **************** Python - Sort Lists *****************
+"""
+"""
+    Sort List Alphanumerically
+List objects have a sort() method that will sort the list alphanumerically, ascending, by default:
+"""
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana","test2","test1"]
+thislist.sort()
+print(thislist)
+
+thislist_1 =[15,23,4,1,2]
+thislist_1.sort()
+print(thislist_1)
+
+"""
+    Sort Descending
+To sort descending, use the keyword argument reverse = True:
+"""
+thislist_1 =[15,23,4,1,2]
+thislist_1.sort(reverse= True)
+print(thislist_1)
+"""
+    Sort Ascending
+To sort Ascending, use the keyword argument reverse = False:
+"""
+thislist_1 =[15,23,4,1,2]
+thislist_1.sort(reverse= False)
+print(thislist_1)
+"""
+    Case Insensitive Sort
+By default the sort() method is case sensitive, resulting in all capital letters being sorted before lower case letters:
+
+Example
+Case sensitive sorting can give an unexpected result:
+"""
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+thislist.sort()
+print(thislist)
+
+"""
+    Luckily we can use built-in functions as key functions when sorting a list.
+
+So if you want a case-insensitive sort function, use str.lower as a key function:
+
+Example
+Perform a case-insensitive sort of the list:
+"""
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+thislist.sort(key = str.lower)
+print(thislist)
+"""
+    Reverse Order
+What if you want to reverse the order of a list, regardless of the alphabet?
+
+The reverse() method reverses the current sorting order of the elements.
+"""
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+thislist.reverse()
+print(thislist)
+"""
+   ****************  Python - Copy Lists  ****************
+   Copy a List
+You cannot copy a list simply by typing list2 = list1, because: list2 will only be a reference to list1, 
+and changes made in list1 will automatically also be made in list2.
+Use the copy() method
+
+"""
+#way 1 by use copy function
+thislist = ["apple", "banana", "cherry"]
+mylist = thislist.copy()
+print(mylist)
+#way 2
+"""
+Use the slice Operator
+You can also make a copy of a list by using the : (slice) operator.
+"""
+thislist = ["apple", "banana", "cherry"]
+mylist = thislist[:]
+print(mylist)
+
+
+"""
+    Use the list() method
+Another way to make a copy is to use the built-in method list().
+"""
+thislist = ["apple", "banana", "cherry"]
+mylist = list(thislist)
+print(mylist)
+
+""" 
+   ****************  Python - Join Lists **************
+   oin Two Lists
+    There are several ways to join, or concatenate, two or more lists in Python.
+
+"""
+
+list1 = ["a", "b", "c"]
+list2 = [1, 2, 3]
+
+print(list1 , " " ,list2)
+#way 1 + operator 
+list3 =list1 + list2
+print("+ join is " ,list3)
+#way 2 for with append
+for i in list2 :
+    list1.append(i)
+print("join by for with append" ,list1)
+#way 3 extend 
+list1 = ["a", "b", "c"]
+list1.extend(list2) 
+print("join by extend " ,list1)
