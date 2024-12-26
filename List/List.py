@@ -302,3 +302,64 @@ new_list =["hello" for x in fruits if x !="mango"]
 print(new_list)
 new_list =[x if x !="banana" else "orange " for x in fruits ]
 print(new_list)
+
+"""
+ **************** Python - Sort Lists *****************
+"""
+"""
+    Sort List Alphanumerically
+List objects have a sort() method that will sort the list alphanumerically, ascending, by default:
+"""
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana","test2","test1"]
+thislist.sort()
+print(thislist)
+
+thislist_1 =[15,23,4,1,2]
+thislist_1.sort()
+print(thislist_1)
+
+"""
+    Sort Descending
+To sort descending, use the keyword argument reverse = True:
+"""
+thislist_1 =[15,23,4,1,2]
+thislist_1.sort(reverse= True)
+print(thislist_1)
+"""
+    Sort Ascending
+To sort Ascending, use the keyword argument reverse = False:
+"""
+thislist_1 =[15,23,4,1,2]
+thislist_1.sort(reverse= False)
+print(thislist_1)
+"""
+    Case Insensitive Sort
+By default the sort() method is case sensitive, resulting in all capital letters being sorted before lower case letters:
+
+Example
+Case sensitive sorting can give an unexpected result:
+"""
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+thislist.sort()
+print(thislist)
+
+"""
+    Luckily we can use built-in functions as key functions when sorting a list.
+
+So if you want a case-insensitive sort function, use str.lower as a key function:
+
+Example
+Perform a case-insensitive sort of the list:
+"""
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+thislist.sort(key = str.lower)
+print(thislist)
+"""
+    Reverse Order
+What if you want to reverse the order of a list, regardless of the alphabet?
+
+The reverse() method reverses the current sorting order of the elements.
+"""
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+thislist.reverse()
+print(thislist)
