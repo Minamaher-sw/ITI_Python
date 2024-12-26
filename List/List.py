@@ -81,3 +81,47 @@ Check if "apple" is present in the list:
 """
 if 'apple' in thislist :
     print("it is found ")
+"""
+    Change Item Value
+To change the value of a specific item, refer to the index number:
+"""
+thislist[0]= "banana"
+print(thislist)
+"""
+    Change a Range of Item Values
+"""
+thislist[0:2] =["mina " , "maher"]
+print(thislist)
+# note 
+"""
+If you insert more items than you replace, the new items will be inserted where you specified, and the remaining items will move accordingly:
+
+Example
+Change the second value by replacing it with two new values:
+"""
+thislist = ["apple", "banana", "cherry"]
+thislist[1:2] = ["blackcurrant", "watermelon"]
+print(thislist)
+
+""" 
+If you insert less items than you replace, the new items will be inserted where you specified, and the remaining items will move accordingly:
+
+Example
+Change the second and third value by replacing it with one value:
+"""
+thislist = ["apple", "banana", "cherry"]
+thislist[1:3] = ["watermelon"]
+print(thislist)
+
+"""
+   ******************  Insert function 
+   pararmeter 1 :index
+   pararmeter 2 : value 
+   To insert a new list item, without replacing any of the existing values, we can use the insert() method.
+   The insert() method inserts an item at the specified index:
+
+"""
+thislist.insert(2,"mosadef")
+print(thislist)
+thislist.insert(2,"Astifanous")
+print(thislist)
