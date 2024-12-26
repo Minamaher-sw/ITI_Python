@@ -60,3 +60,15 @@ The split() method splits the string into substrings if it finds instances of th
 list = first_name.split(" ")
 print(first_name)
 print("List of first name after split : ",list)
+
+"""
+    ************************ Python - Format - Strings ***************************
+    String Format
+    f formate 
+    As we learned in the Python Variables chapter, we cannot combine strings and numbers
+"""
+age = 36
+txt = "my name is {} my age is {}".format(first_name ,age)
+print(txt)
+print("by using f formate")
+print(f"my name is {first_name} , age is {age}")
