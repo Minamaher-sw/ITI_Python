@@ -11,4 +11,6 @@ print("lenght of empty string is" ,len(empty_string))
 #check string 
 if "Maher" in first_name :
     print(True)
-
+#loop string 
+for char in first_name :
+    print(char)
