@@ -29,3 +29,10 @@ list3 = [True, False, False]
     From Python's perspective, lists are defined as objects with the data type 'list':
 """
 print(type(thislist))
+
+"""
+    The list() Constructor
+    It is also possible to use the list() constructor when creating a new list.     
+"""
+thislist = list(('apple' , 'orange' ,22))
+print(thislist)
