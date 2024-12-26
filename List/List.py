@@ -158,3 +158,67 @@ print(thislist ,"\n" ,thistuple)
 thislist.extend(thistuple)
 print(f"thislist after extend ffunction tuple is {thislist} " )
 
+"""
+    ******************** Python - Remove List Items ******
+"""
+"""
+    Remove Specified Item
+The remove() method removes the specified item
+
+If there are more than one item with the specified value, the remove() method removes the first occurrence:
+
+Example
+Remove the first occurrence of "banana":
+"""
+print(thislist)
+thislist.remove("apple")
+print(thislist)
+
+thislist = ["apple", "banana", "cherry", "banana", "kiwi"]
+print(thislist)
+thislist.remove("banana")
+print(thislist)
+
+"""
+Remove Specified Index
+The pop() method removes the specified index.
+parameter 1 is index 
+"""
+thislist = ["apple", "banana", "cherry", "banana", "kiwi"]
+print(thislist)
+thislist.pop()
+print(thislist)
+
+thislist = ["apple", "banana", "cherry", "banana", "kiwi"]
+print(thislist)
+thislist.pop(1)
+print(thislist)
+
+# The del keyword also removes the specified index: 
+"""
+    del :
+    del thislist[0]
+    The del keyword can also delete the list completely.
+    del thislist
+"""
+thislist = ["apple", "banana", "cherry", "banana", "kiwi"]
+print(thislist)
+del thislist[0]
+print(thislist)
+print("**************************************")
+thislist = ["apple", "banana", "cherry", "banana", "kiwi"]
+print(thislist)
+del thislist
+# error : name 'thislist' is not defined
+#print(thislist)
+
+"""
+    Clear the List
+    The clear() method empties the list.
+"""
+print("**************************************")
+thislist = ["apple", "banana", "cherry", "banana", "kiwi"]
+print(thislist)
+thislist.clear()
+print(thislist)
+
