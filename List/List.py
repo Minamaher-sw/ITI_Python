@@ -11,3 +11,21 @@ To determine how many items a list has, use the len() function:
 """
 thislist = ["apple", "banana", "cherry"]
 print(len(thislist))
+
+"""
+    List Items - Data Types
+List items can be of any data type:
+
+Example
+String, int and boolean data types:
+
+list1 = ["apple", "banana", "cherry"]
+list2 = [1, 5, 7, 9, 3]
+list3 = [True, False, False]
+"""
+
+"""
+    type() function 
+    From Python's perspective, lists are defined as objects with the data type 'list':
+"""
+print(type(thislist))
