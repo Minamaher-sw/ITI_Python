@@ -29,3 +29,24 @@ print(first_name)
 print(first_name)
 print("lower case of first name is",first_name.lower() )
 
+# ************************** nonplace function ******************
+"""
+Remove Whitespace
+Whitespace is the space before and/or after the actual text, and very often you want to remove this space.
+
+The strip() method removes any whitespace from the beginning or the end:
+"""
+white_string ="  mina maher  "
+
+print(f"white_string after Remove Whitespace :{white_string.strip()}" )
+
+"""
+    Replace String
+Example
+The replace() method replaces a string with another string:
+"" is act each character not space 
+" " is space character 
+"""
+print(white_string)
+print("white after replace "" with - is : " ,white_string.replace(" " ,"-"))
+
