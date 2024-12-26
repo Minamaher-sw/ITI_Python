@@ -45,3 +45,29 @@ print(thislist)
 """
 new_list =thislist[-1]
 print(new_list)
+
+"""
+    Range of Indexes
+You can specify a range of indexes by specifying where to start and where to end the range.
+
+When specifying a range, the return value will be a new list with the specified items.just copy
+"""
+new_list_2 =thislist[0:2]
+print(new_list_2)
+new_list_2 =thislist[:2]
+print(new_list_2)
+new_list_2 =thislist[0:]
+print(new_list_2)
+new_list_2 =thislist[:]
+print(new_list_2)
+
+"""
+    Range of Negative Indexes
+Specify negative indexes if you want to start the search from the end of the list:
+"""
+#reverse
+new_list_2 =thislist[-1::-1]
+print(new_list_2)
+
+new_list_2 =thislist[-1:-4:-1]
+print(new_list_2)
