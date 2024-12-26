@@ -14,3 +14,9 @@ if "Maher" in first_name :
 #loop string 
 for char in first_name :
     print(char)
+
+#check is not string 
+if "maher" not in first_name :
+    print(True)
+
+
