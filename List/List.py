@@ -392,3 +392,26 @@ Another way to make a copy is to use the built-in method list().
 thislist = ["apple", "banana", "cherry"]
 mylist = list(thislist)
 print(mylist)
+
+""" 
+   ****************  Python - Join Lists **************
+   oin Two Lists
+    There are several ways to join, or concatenate, two or more lists in Python.
+
+"""
+
+list1 = ["a", "b", "c"]
+list2 = [1, 2, 3]
+
+print(list1 , " " ,list2)
+#way 1 + operator 
+list3 =list1 + list2
+print("+ join is " ,list3)
+#way 2 for with append
+for i in list2 :
+    list1.append(i)
+print("join by for with append" ,list1)
+#way 3 extend 
+list1 = ["a", "b", "c"]
+list1.extend(list2) 
+print("join by extend " ,list1)
