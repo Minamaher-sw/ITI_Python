@@ -23,5 +23,9 @@ if "maher" not in first_name :
 #  upper function
 print(first_name)
 print("upper case of first name is",first_name.upper() )
+print(first_name)
 
+# Lower Case Function 
+print(first_name)
+print("lower case of first name is",first_name.lower() )
 
