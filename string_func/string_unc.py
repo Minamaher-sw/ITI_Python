@@ -72,3 +72,31 @@ txt = "my name is {} my age is {}".format(first_name ,age)
 print(txt)
 print("by using f formate")
 print(f"my name is {first_name} , age is {age}")
+
+""""
+    *************            ***  Escape Character ***************** ******
+To insert characters that are illegal in a string, use an escape character.
+
+An escape character is a backslash \ followed by the character you want to insert.
+
+An example of an illegal character is a double quote inside a string that is surrounded by double quotes:
+
+Example Get your own Python Server
+You will get an error if you use double quotes inside a string that is surrounded by double quotes:
+
+      txt = "We are the so-called "Vikings" from the north."
+
+      To fix this problem, use the escape character \":
+
+    \'	    Single Quote	
+    \\	    Backslash	
+    \n	    New Line	
+    \r	    Carriage Return	
+    \t	    Tab	
+    \b	    Backspace	
+    \f	    Form Feed	
+    \ooo	Octal value	
+    \xhh	Hex value
+"""
+txt = "We are the so-called \"Vikings\" from the north." 
+print("double quotes inside double quotes " ,txt)
