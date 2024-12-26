@@ -71,3 +71,13 @@ print(new_list_2)
 
 new_list_2 =thislist[-1:-4:-1]
 print(new_list_2)
+
+"""
+    Check if Item Exists
+To determine if a specified item is present in a list use the in keyword:
+
+Example
+Check if "apple" is present in the list:
+"""
+if 'apple' in thislist :
+    print("it is found ")
