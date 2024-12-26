@@ -19,4 +19,9 @@ for char in first_name :
 if "maher" not in first_name :
     print(True)
 
+#  ************************ Modify Function of string *************************
+#  upper function
+print(first_name)
+print("upper case of first name is",first_name.upper() )
+
 
