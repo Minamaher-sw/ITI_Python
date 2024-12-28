@@ -101,6 +101,76 @@ print(thistuple[-4:-1])
 thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
 if 'apple' in thistuple:
     print(True)
+
+"""
+    Python - Update Tuples
+    Tuples are unchangeable, meaning that you cannot change, add,  
+    or remove items once the tuple is created.
+But there are some workarounds.
+    Change Tuple Values
+Once a tuple is created, you cannot change its values. T
+tuples are unchangeable, or immutable as it also is called.
+
+But there is a workaround. You can convert the tuple into a list, 
+change the list, and convert the list back into a tuple.
+"""
+x = ("apple", "banana", "cherry")
+y =list(x)
+y[0]="Kiwi"
+x =tuple(y)
+print("workaround :" ,x)
+
+"""
+    Add Items
+Since tuples are immutable, they do not have a built-in append() method, 
+but there are other ways to add items to a tuple.
+
+1. Convert into a list: Just like the workaround for changing a tuple, 
+you can convert it into a list, add your item(s), and convert it back into a tuple.
+
+Example
+Convert the tuple into a list, add "orange", and convert it back into a tuple:
+"""
+x = ("apple", "banana", "cherry")
+print("tuple : " ,x)
+y =list(x)
+y.append("orange")
+x =tuple(y)
+print("adding items by list woraround b using append " ,x)
+
+#Add tuple to a tuple. You are allowed to add tuples to tuples, so if you want to add one item, (or many), create a new tuple with the item(s), and add it to the existing tuple:
+
+#Example
+#Create a new tuple with the value "orange", and add that tuple:
+
+thistuple = ("apple", "banana", "cherry")
+y = ("orange",)
+thistuple += y
+print(thistuple)
+
+"""
+    Remove Items
+Note: You cannot remove items in a tuple.
+
+Tuples are unchangeable, so you cannot remove items from it, but you can use the same workaround as we used for changing and adding tuple items:
+
+Example
+Convert the tuple into a list, remove "apple", and convert it back into a tuple:
+
+thistuple = ("apple", "banana", "cherry")
+y = list(thistuple)
+y.remove("apple")
+thistuple = tuple(y)
+"""
+thistuple = ("apple", "banana", "cherry")
+y = list(thistuple)
+y.remove("apple")
+thistuple = tuple(y)
+print("after use removve :" ,thistuple)
+
+# del function 
+del(thistuple)
+#print(thistuple)  error name 'thistuple' is not defined
 """
     Unpacking a Tuple
     When we create a tuple, we normally assign values to it. This is called "packing" a tuple:
