@@ -101,3 +101,45 @@ print(thistuple[-4:-1])
 thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
 if 'apple' in thistuple:
     print(True)
+"""
+    Unpacking a Tuple
+    When we create a tuple, we normally assign values to it. This is called "packing" a tuple:
+    ExampleGet your own Python Server
+    Packing a tuple:
+
+    fruits = ("apple", "banana", "cherry")
+"""
+fruits = ("apple", "banana", "cherry")
+
+"""
+    Unpacking a Tuple
+    When we create a tuple, we normally assign values to it. This is called "packing" a tuple:
+
+    ExampleGet your own Python Server
+    Packing a tuple:
+
+    fruits = ("apple", "banana", "cherry")
+"""
+#unpacing 
+(item1 , item2 ,item3) =fruits
+print(item1)
+print(item2)
+print(item3)
+"""
+    Note: The number of variables must match the number of values in the tuple,
+      if not, you must use an asterisk to collect the remaining values as a list.
+      Using Asterisk* (*args) list type
+        If the number of variables is less than the number of values, you can add an *  
+        to the variable name and the values will be assigned to the variable as a list:
+"""
+fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
+
+(item1 ,item2 ,*args) =fruits
+print("item1 :",item1)
+print("item1 :",item2)
+print("*agrs :",args)
+
+(item1 ,*args ,item2) =fruits
+print("item1 :",item1)
+print("item1 :",item2)
+print("*agrs :",args)
