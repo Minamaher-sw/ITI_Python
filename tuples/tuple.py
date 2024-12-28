@@ -60,3 +60,44 @@ print (f"class type of ('apple',){type(mytuple_1)}")
 my_tuple =( 1 ,2 , 4,5)
 thistuple =tuple(my_tuple)
 print(type(thistuple))
+
+
+"""
+    Access Tuple Items
+    You can access tuple items by referring to the index number, inside square brackets
+    positive index 
+"""
+thistuple = ("apple", "banana", "cherry")
+print(thistuple)
+print(thistuple[1])
+"""
+    Negative Indexing
+"""
+thistuple = ("apple", "banana", "cherry")
+print(thistuple)
+print(thistuple[-1])
+"""
+    Range of index
+"""
+thistuple = ("apple", "banana", "cherry")
+print(thistuple)
+print(thistuple[0:2])
+
+my_tuple =thistuple[:]
+print(my_tuple)
+# TypeError: 'tuple' object does not support item assignment
+#thistuple[0] ='mina'
+
+"""
+    Range of negative index
+"""
+thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+print(thistuple[-4:-1])
+
+"""
+    Check if Item Exists
+    To determine if a specified item is present in a tuple use the in keyword:
+"""
+thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+if 'apple' in thistuple:
+    print(True)
