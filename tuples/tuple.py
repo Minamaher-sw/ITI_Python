@@ -143,3 +143,20 @@ print("*agrs :",args)
 print("item1 :",item1)
 print("item1 :",item2)
 print("*agrs :",args)
+"""
+    Loop Through a Tuple
+    You can loop through the tuple items by using a for loop.
+"""
+fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
+for item in fruits :
+    print(item)
+#loop on indexx
+print("by using for and index")
+for index in range(len(fruits)):
+    print(fruits[index])
+#by using while loop
+print("by using while and index")
+index = 0
+while index <len(fruits):
+    print(fruits[index])
+    index +=1
