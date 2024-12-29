@@ -20,3 +20,32 @@ def my_CalProfits(salary , Bonus =100):
     return profits
 print(my_CalProfits(2000))
 print(my_CalProfits(2000 , 300))
+
+"""
+    *args with function 
+    class -> tuple
+    **kwargs 
+    class -> dictionary
+"""
+def m_sum(z ,x ,*args):
+    return sum(args)+z+x
+# positional call order 
+print(m_sum(1 ,2 ,3,4 ,5))
+
+#name call 
+def my_sum( *arg1 ,x, y,z ,):
+    sum_1 = x+y+z +sum(arg1)
+    return sum_1 
+print(my_sum( 12 ,12 ,12 ,z=40 ,y=10 ,x=10))
+
+#un limited argument with name use 
+def my_sum_1( x, y,z ,**kwarg ):
+    sum_1 = x+y+z +sum(kwarg.values())
+    return sum_1 
+print (my_sum_1( z=40 ,y=10 ,x=10 , p=13 ,q=122 ,n=10 ))
+
+#note positional argument not follow keyword arguument
+def my_sum_2( *args ,x, y,z  ,**kwarg ):
+    sum_1 = x+y+z +sum(args)+sum(kwarg.values())
+    return sum_1 
+print (my_sum_2(12 , 13,14 , z=40 ,y=10 ,x=10 , p=13 ,q=122 ,n=10 ))
