@@ -49,3 +49,33 @@ def my_sum_2( *args ,x, y,z  ,**kwarg ):
     sum_1 = x+y+z +sum(args)+sum(kwarg.values())
     return sum_1 
 print (my_sum_2(12 , 13,14 , z=40 ,y=10 ,x=10 , p=13 ,q=122 ,n=10 ))
+
+"""
+                story of scope
+                lexical scope  from inner to outer
+                globale scope  
+"""
+print(" lexical scope")
+name ="ali"
+def my_func (my_name ):
+    name =my_name
+    print(name)
+
+my_func("mina")
+print(name)
+
+name ="ali"
+def my_func_1 (my_name ):
+    print(name)
+
+my_func_1("mina")
+print(name)
+
+print(" global key word")
+name ="ali"
+def my_func_2 (my_name ):
+    global name
+    name =my_name
+    print(name)
+my_func_2("mina")
+print(name)
