@@ -30,3 +30,7 @@ y=89
 print("x y" ,x,y)
 x,y =y,x
 print("after  tuple way x y" ,x,y)
+
+# end of print end ="\n" by default
+print("hi mina" ,end=" .")
+print("com")
