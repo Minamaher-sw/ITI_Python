@@ -59,3 +59,20 @@ if(lis_1 is lis_2):
     print("ok")
 else :
     print("not")
+"""
+    ************** any and all *************
+    all :
+    return true if all element in list is true
+    any:
+        return true if one element in list is true
+
+"""
+L=[1,2,3,4,5]
+print(all(L))
+L=[1,2,3,4,0]
+print(all(L))
+
+L=[1,2,3,4,5]
+print(any(L))
+L=[1,2,3,4,0]
+print(any(L))
