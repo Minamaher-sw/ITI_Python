@@ -16,10 +16,38 @@ class ComEmployee :
         self.title=title
         self.address=address
         self.department=department
+        """
+            Methodes of class 
+        """
+    #instance method  99 %it use 
+    def get_tax_dol(self):
+         return self.salary * .20
     
+    def get_tax_egp(self):
+        taxs =self.salary * .20
+        return self.getConv_dol_egp(taxs)
+    #class Method share with all object creete object
+    @classmethod
+    def greatobject_from_string(cls ,string):
+        data_split=string.split("_")
+        return cls(data_split[0] ,int(data_split[1]),int(data_split[2]),data_split[3],{data_split[4]:data_split[5],data_split[6]:data_split[7]},data_split[8])
+    #Static Method not use ot class 
+    @staticmethod
+    def getConv_dol_egp(value):
+        return value * 55
 
+    
+txt="Krkr_14_1230_Devops Engineer_city_sohag_street_minst_communication"
 emp1=ComEmployee(name="mina",age=14,salary=1230,title="Devops Engineer",address={"city":"sohag","street":"minst"},department="communication")
 emp2=ComEmployee(name="Pepo",age=23,salary=2300,title="Devnet Engineer",address={"city":"sohag","street":"mohmen"},department="Computer science")
+emp3=ComEmployee.greatobject_from_string(txt)
+print(emp3.name)
+#call instance method
+emp1_tax=emp1.get_tax_dol()
+print("Tax by Dollar" ,emp1_tax)
+emp1_tax=emp1.get_tax_egp()
+print("Tax in Egp" ,emp1_tax)
+
 
 print(emp1.name)
 print(emp2.name)
