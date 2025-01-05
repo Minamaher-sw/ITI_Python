@@ -94,3 +94,10 @@ manger_hr=manger(name="hamada" ,age=44 ,salary=45000 ,title="Manger of Hr sectio
 manger_hr_data="Krkr_14_1230_Devops Engineer_city_sohag_street_minst_communication_123"
 manger_hr_2=manger.manger_greatobject_from_string(manger_hr_data)
 print(manger_hr_2.office_id)
+
+class any :
+    def __init__(self,name ,slaray ):
+        self.name=name
+        self.slaray=slaray
+        self.taxs=self.slaray *.20
+emp1=any(name="mina", slaray=2200 )
