@@ -1,3 +1,6 @@
+#from cal_fun import *
+from  my_package import cal_fun as x 
+import math 
 # DRY DON'T Repeet yourself 
 def my_calTax_1(salary):
     Tax = (20/100) *salary
@@ -79,3 +82,7 @@ def my_func_2 (my_name ):
     print(name)
 my_func_2("mina")
 print(name)
+
+print (x.sum_1(12,13,14))
+lis =[1,2,3,4,5]
+print (math.pow(2,3))
