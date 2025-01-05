@@ -72,3 +72,25 @@ print(ComEmployee.active ,emp1.active,emp2.active)
     using of class variable
     is variable belong all object of this class 
 """
+
+"""
+    inheritance section 
+    Employee can be 
+    manger 
+    sales 
+    enginner 
+"""
+#defination of inheritance adding new atrribute only
+class manger(ComEmployee):
+    def __init__(self , name ,age ,salary ,title ,address ,department ,office_id):
+        super().__init__( name ,age ,salary ,title ,address ,department )
+        self.office_id =office_id
+    @classmethod
+    def manger_greatobject_from_string(cls,string):
+        data_split=string.split("_")
+        return cls(data_split[0] ,int(data_split[1]),int(data_split[2]),data_split[3],{data_split[4]:data_split[5],data_split[6]:data_split[7]},data_split[8],int(data_split[9]))
+    
+manger_hr=manger(name="hamada" ,age=44 ,salary=45000 ,title="Manger of Hr section" ,address={"city":"cairo","street":"mary gergres" },department="HR" ,office_id=123)
+manger_hr_data="Krkr_14_1230_Devops Engineer_city_sohag_street_minst_communication_123"
+manger_hr_2=manger.manger_greatobject_from_string(manger_hr_data)
+print(manger_hr_2.office_id)
