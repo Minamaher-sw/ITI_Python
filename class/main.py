@@ -16,6 +16,10 @@ class ComEmployee :
         self.title=title
         self.address=address
         self.department=department
+    
+    @property
+    def g_taxes(self):
+        return self.salary * .20
         """
             Methodes of class 
         """
@@ -41,6 +45,9 @@ txt="Krkr_14_1230_Devops Engineer_city_sohag_street_minst_communication"
 emp1=ComEmployee(name="mina",age=14,salary=1230,title="Devops Engineer",address={"city":"sohag","street":"minst"},department="communication")
 emp2=ComEmployee(name="Pepo",age=23,salary=2300,title="Devnet Engineer",address={"city":"sohag","street":"mohmen"},department="Computer science")
 emp3=ComEmployee.greatobject_from_string(txt)
+print(emp1.g_taxes)
+emp1.salary=2000
+print(emp1.g_taxes)
 print(emp3.name)
 #call instance method
 emp1_tax=emp1.get_tax_dol()
@@ -94,3 +101,4 @@ manger_hr=manger(name="hamada" ,age=44 ,salary=45000 ,title="Manger of Hr sectio
 manger_hr_data="Krkr_14_1230_Devops Engineer_city_sohag_street_minst_communication_123"
 manger_hr_2=manger.manger_greatobject_from_string(manger_hr_data)
 print(manger_hr_2.office_id)
+
