@@ -153,3 +153,18 @@ print(list(ret_val))
 """
 for i in map(lambda num : num**2 ,my_list):
     print(i)
+
+#*************** list ,dict comprihantion ********************
+my_numpow=[]
+for i in my_list:
+    if(i%2==0):
+        my_numpow.append(i**2)
+print(my_numpow)
+
+my_numpow =[i**2 for i in my_list]
+print(my_numpow)
+my_numpow =[i**2 for i in my_list if i%2==0]
+print(my_numpow)
+
+my_dict={f"{i}" : i**2 for i in my_list}
+print(my_dict)
