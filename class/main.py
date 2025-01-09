@@ -119,9 +119,37 @@ for i in my_list:
 print("v2")
 for i in my_list:
     print(check_v2_div_by_3(i))
-    
+
 print("v3 using lambda ")
 for i in my_list:
     print(my_check(i))
 
+"""
+    Filter 
+    filter :
+       check value and if true return this value if false dont return it 
+    parameter :
+    fnction name :
+    list :
+    return : iterable 
+"""
+for i in filter(check_v1_div_by_3 ,my_list):
+    print(i)
 
+for i in filter(my_check,my_list):
+    print(i)
+for i in filter(lambda num :num%3 ==0,my_list):
+    print(i)
+ret_val=filter(lambda num :num%3 ==0,my_list)
+print(list(ret_val))
+"""
+    map 
+     :
+       take each value  and excute operation and append it 
+    parameter :
+    fnction name :
+    list :
+    return : iterable 
+"""
+for i in map(lambda num : num**2 ,my_list):
+    print(i)
