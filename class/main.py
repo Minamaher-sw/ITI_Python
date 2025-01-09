@@ -102,3 +102,26 @@ manger_hr_data="Krkr_14_1230_Devops Engineer_city_sohag_street_minst_communicati
 manger_hr_2=manger.manger_greatobject_from_string(manger_hr_data)
 print(manger_hr_2.office_id)
 
+#*********************** Tips and Tricks *******************************
+def check_v1_div_by_3(num):
+    if num %3==0 :
+        return True
+    return False
+
+
+def check_v2_div_by_3(num):
+    return  num %3==0 
+
+my_check= lambda num:num%3 ==0 
+my_list=[1,2,3,4,5,6]
+for i in my_list:
+    print(check_v1_div_by_3(i))
+print("v2")
+for i in my_list:
+    print(check_v2_div_by_3(i))
+    
+print("v3 using lambda ")
+for i in my_list:
+    print(my_check(i))
+
+
